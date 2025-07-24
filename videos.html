@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos | Mov3m3nt (Kalul3t3)</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/videos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="MOV3M3NT111.png" alt="Mov3m3nt Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="videos.html" class="active">Videos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Video Collection</h1>
+            <p>Watch our official music videos, live performances and more</p>
+        </section>
+
+        <section class="video-gallery">
+            <div class="video-filters">
+                <div class="filter-buttons">
+                    <button class="active">All Videos</button>
+                    <button>Music Videos</button>
+                    <button>Live Performances</button>
+                    <button>Behind The Scenes</button>
+                    <button>Interviews</button>
+                </div>
+            </div>
+
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="assets/images/video1.jpg" alt="Video Thumbnail">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">4:32</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Song Title (Official Video)</h3>
+                        <p class="views">1.2M views • 3 weeks ago</p>
+                        <p class="description">Official music video for our latest single</p>
+                        <a href="#" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="assets/images/video2.jpg" alt="Video Thumbnail">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="duration">5:15</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Live at Lusaka Music Fest</h3>
+                        <p class="views">856K views • 2 months ago</p>
+                        <p class="description">Full live performance from our headline set</p>
+                        <a href="#" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+
+                <!-- Repeat for other videos -->
+            </div>
+
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="video-modal hidden">
+            <div class="modal-content">
+                <button class="close-modal">&times;</button>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-details">
+                    <h3>Video Title</h3>
+                    <p class="views">1.2M views</p>
+                    <p class="description">Video description goes here with all the details about this video production.</p>
+                    <div class="video-actions">
+                        <button><i class="fas fa-thumbs-up"></i> Like</button>
+                        <button><i class="fas fa-share"></i> Share</button>
+                        <a href="#" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <p>&copy; 2023 Mov3m3nt (Kalul3t3). All rights reserved.</p>
+    </footer>
+
+    <script src="js/videos.js"></script>
+</body>
+</html>

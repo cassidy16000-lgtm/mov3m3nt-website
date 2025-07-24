@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "title": "Zambian Vibes",
+    "artist": "Kalul3t3",
+    "audioUrl": "https://soundcloud.com/yourusername/track1",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": "Afro Fusion",
+    "artist": "Kalul3t3",
+    "audioUrl": "https://soundcloud.com/yourusername/track2",
+    "featured": true
+  }
+]

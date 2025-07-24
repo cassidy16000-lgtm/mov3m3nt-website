@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mov3m3nt (Kalul3t3) | Official Music Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-element" style="width: 50px; height: 50px; left: 10%; animation-delay: 0s; animation-duration: 20s;"></div>
+        <div class="floating-element" style="width: 30px; height: 30px; left: 30%; animation-delay: 2s; animation-duration: 15s;"></div>
+        <div class="floating-element" style="width: 40px; height: 40px; left: 70%; animation-delay: 4s; animation-duration: 18s;"></div>
+        <div class="floating-element" style="width: 60px; height: 60px; left: 50%; animation-delay: 6s; animation-duration: 25s;"></div>
+    </div>
+
+    <header>
+        <div class="logo pulse">
+            <img src="MOV3M3NT111.png" alt="Mov3m3nt Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="music.html" class="nav-link">Music</a></li>
+                <li><a href="videos.html" class="nav-link">Videos</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero animate__animated animate__fadeIn">
+            <h1>MOV3M3NT <span>KALUL3T3</span></h1>
+            <p>Zambia's Hottest Music Collective</p>
+            <div class="equalizer">
+                <div class="equalizer-bar"></div>
+                <div class="equalizer-bar"></div>
+                <div class="equalizer-bar"></div>
+                <div class="equalizer-bar"></div>
+                <div class="equalizer-bar"></div>
+            </div>
+            <div class="cta-buttons">
+                <a href="#featured-music" class="btn">Listen Now</a>
+                <a href="#latest-video" class="btn btn-outline">Watch Video</a>
+            </div>
+        </section>
+
+        <section id="featured-music" class="featured-music animate__animated animate__fadeInUp">
+            <h2>Featured Tracks</h2>
+            <div class="music-player">
+                <div class="music-track">
+                    <h3>Track 1 - "Movement Anthem"</h3>
+                    <div class="audio-player">
+                        <audio id="track1" src="assets/music/track1.mp3"></audio>
+                        <div class="player-controls">
+                            <button class="play-btn" onclick="togglePlay('track1')"><i class="fas fa-play"></i></button>
+                            <div class="progress-container" onclick="seek(event, 'track1')">
+                                <div class="progress" id="progress-track1"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="current-time-track1">0:00</span> / <span id="duration-track1">3:45</span>
+                            </div>
+                            <div class="volume-control">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value, 'track1')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="music-track">
+                    <h3>Track 2 - "Zambian Vibes"</h3>
+                    <div class="audio-player">
+                        <audio id="track2" src="assets/music/track2.mp3"></audio>
+                        <div class="player-controls">
+                            <button class="play-btn" onclick="togglePlay('track2')"><i class="fas fa-play"></i></button>
+                            <div class="progress-container" onclick="seek(event, 'track2')">
+                                <div class="progress" id="progress-track2"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="current-time-track2">0:00</span> / <span id="duration-track2">4:12</span>
+                            </div>
+                            <div class="volume-control">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value, 'track2')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="music-track">
+                    <h3>Track 3 - "Kalulete Flow"</h3>
+                    <div class="audio-player">
+                        <audio id="track3" src="assets/music/track3.mp3"></audio>
+                        <div class="player-controls">
+                            <button class="play-btn" onclick="togglePlay('track3')"><i class="fas fa-play"></i></button>
+                            <div class="progress-container" onclick="seek(event, 'track3')">
+                                <div class="progress" id="progress-track3"></div>
+                            </div>
+                            <div class="time-display">
+                                <span id="current-time-track3">0:00</span> / <span id="duration-track3">3:28</span>
+                            </div>
+                            <div class="volume-control">
+                                <i class="fas fa-volume-up"></i>
+                                <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value, 'track3')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest-video" class="video-section animate__animated animate__fadeInUp">
+            <h2>Latest Video</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="upcoming-events animate__animated animate__fadeIn">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">JUL 30</div>
+                    <div class="event-info">
+                        <h3>Lusaka Music Festival</h3>
+                        <p>Lusaka Showgrounds</p>
+                    </div>
+                    <button class="btn btn-small">Get Tickets</button>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">AUG 15</div>
+                    <div class="event-info">
+                        <h3>Kalulete Night</h3>
+                        <p>Club Phoenix, Ndola</p>
+                    </div>
+                    <button class="btn btn-small">Get Tickets</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-spotify"></i></a>
+            <a href="#"><i class="fab fa-apple"></i></a>
+        </div>
+        <p>&copy; 2023 Mov3m3nt (Kalul3t3). All rights reserved.</p>
+        <div class="newsletter">
+            <input type="email" placeholder="Subscribe to our newsletter">
+            <button class="btn">Subscribe</button>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
